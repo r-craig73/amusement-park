@@ -18,3 +18,8 @@
   border: 1px solid;
   margin-top: 10px;
 }
+
+.cantRide {
+  background-color: #fcefef;
+  border-color: gray;
+}
