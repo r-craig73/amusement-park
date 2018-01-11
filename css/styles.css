@@ -11,3 +11,10 @@
   border: 1px solid;
   margin-top: 10px;
 }
+
+.noRides {
+  display: none;
+  background-color: #FFCCCC;
+  border: 1px solid;
+  margin-top: 10px;
+}

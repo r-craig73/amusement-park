@@ -4,25 +4,30 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     var inches = parseInt($("input#inches1").val());
     var feet = parseInt($("input#feet1").val());
-    var totalInches = feet * 12 + inches;
+    var totalInches = (feet * 12) + inches;
     event.preventDefault();
 
     if ( totalInches <= 36 && totalInches > 0 ) {
+      $(".noRides").hide();
       $("#ferris").show();
-    };
-
-    if ( totalInches >= 36 && totalInches <= 48 ) {
+      $(".adultRides").hide();
+    } else if ( totalInches > 36 && totalInches <= 48 ) {
+      $(".noRides").hide();
       $(".kiddieRides").show();
-    };
-
-    if ( totalInches >= 48 && totalInches <= 60) {
+      $(".adultRides").hide();
+    } else if ( totalInches > 48 && totalInches <= 60) {
+      $(".noRides").hide();
       $(".kiddieRides").show();
       $(".adultRides").show();
-    }
-
-    if ( totalInches >= 60 && totalInches <= 108) {
+    } else if ( totalInches > 60 && totalInches <= 108) {
+      $(".noRides").hide();
       $("#ferris").show();
       $(".adultRides").show();
+      $("#swing").hide();
+    } else {
+      $(".noRides").show();
+      $(".kiddieRides").hide();
+      $(".adultRides").hide();
     }
 
 

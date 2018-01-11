@@ -11,19 +11,19 @@
   <body>
 
 <div class="container">
-  <h1>Welcome to TBD Park!</h1>
+  <h1>Welcome to Adventure Land Park!</h1>
 
   <p>Please enter your height, in feet and inches</p>
   <form id="formOne">
             <div class="form-group">
               <label for="feet1">Feet</label>
-              <input id="feet1" class="form-control" type="text">
+              <input id="feet1" id="validationDefault01" class="form-control" type="text" required>
             </div>
             <div class="form-group">
               <label for="inches1">Inches</label>
-              <input id="inches1" class="form-control" type="text">
+              <input id="inches1" id="validationDefault01" class="form-control" type="text" required>
             </div>
-            <button type="submit" class="btn">Submit!</button>
+            <button type="submit" class="btn btn-info">Submit!</button>
   </form>
 
   <div class="kiddieRides" id="ferris">
@@ -44,6 +44,11 @@
   <div class="adultRides">
     <h3>Bumper Cars</h3>
     <p>It's bumper cars! Drive these cars.</p>
+  </div>
+
+  <div class="noRides">
+    <h3>No Rides :-(</h3>
+    <p>Please enjoy the shows, food, and other attractions.</p>
   </div>
 
   </div>
