@@ -1,3 +1,13 @@
-#kiddieRides{
+.kiddieRides{
   display: none;
+  background-color: #FFCCCC;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+.adultRides {
+  display: none;
+  background-color: #FFCCCC;
+  border: 1px solid;
+  margin-top: 10px;
 }
