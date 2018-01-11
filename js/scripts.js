@@ -6,7 +6,6 @@ var totalInches;
     var feet = parseInt($("input#feet1").val());
     totalInches = (feet * 12) + inches;
     event.preventDefault();
-
     $("div").removeClass("cantRide");
 
     if ( totalInches <= 36 && totalInches > 0 ) {
@@ -34,13 +33,11 @@ var totalInches;
   });
 
   $("button#show").click(function() {
-    console.log('clciked');
     if ( totalInches <= 36 && totalInches > 0 ) {
       $(".noRides").hide();
       $("#swing").addClass("cantRide");
       $(".kiddieRides").show();
-      $(".adultRides").addClass("cantRide");
-      $(".adultRides").show();
+      $(".adultRides").addClass("cantRide").show();
     } else if ( totalInches > 36 && totalInches <= 48 ) {
       $(".noRides").hide();
       $(".kiddieRides").show();
@@ -60,7 +57,5 @@ var totalInches;
       $(".adultRides").addClass("cantRide").show();
     }
   });
-
-
 
 });
